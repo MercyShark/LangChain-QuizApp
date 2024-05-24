@@ -1,0 +1,106 @@
+{
+    "quiz_topic": "animal",
+    "no_of_questions": 10,
+    "questions": [
+        {
+            "question": "Which animal is known for its long neck?",
+            "options": [
+                "Giraffe",
+                "Elephant",
+                "Lion",
+                "Tiger"
+            ],
+            "answer": "Giraffe"
+        },
+        {
+            "question": "Which animal is the fastest land animal?",
+            "options": [
+                "Cheetah",
+                "Lion",
+                "Tiger",
+                "Zebra"
+            ],
+            "answer": "Cheetah"
+        },
+        {
+            "question": "Which animal is the largest land mammal?",
+            "options": [
+                "Elephant",
+                "Rhinoceros",
+                "Hippopotamus",
+                "Giraffe"
+            ],
+            "answer": "Elephant"
+        },
+        {
+            "question": "Which animal is the smallest mammal?",
+            "options": [
+                "Bumblebee bat",
+                "Mouse",
+                "Shrew",
+                "Hamster"
+            ],
+            "answer": "Bumblebee bat"
+        },
+        {
+            "question": "Which animal is the only mammal that can fly?",
+            "options": [
+                "Bat",
+                "Bird",
+                "Squirrel",
+                "Monkey"
+            ],
+            "answer": "Bat"
+        },
+        {
+            "question": "Which animal is the most intelligent?",
+            "options": [
+                "Dolphin",
+                "Chimpanzee",
+                "Elephant",
+                "Dog"
+            ],
+            "answer": "Dolphin"
+        },
+        {
+            "question": "Which animal is the most endangered?",
+            "options": [
+                "Giant panda",
+                "Tiger",
+                "Lion",
+                "Elephant"
+            ],
+            "answer": "Giant panda"
+        },
+        {
+            "question": "Which animal is the most common?",
+            "options": [
+                "Rat",
+                "Mouse",
+                "Bird",
+                "Fish"
+            ],
+            "answer": "Rat"
+        },
+        {
+            "question": "Which animal is the most venomous?",
+            "options": [
+                "Inland taipan",
+                "Black mamba",
+                "King cobra",
+                "Rattlesnake"
+            ],
+            "answer": "Inland taipan"
+        },
+        {
+            "question": "Which animal is the most social?",
+            "options": [
+                "Ant",
+                "Bee",
+                "Termite",
+                "Dolphin"
+            ],
+            "answer": "Ant"
+        }
+    ]
+}
