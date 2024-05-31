@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+import certifi
 from core.config import settings
 
 def connect():

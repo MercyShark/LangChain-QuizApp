@@ -25,7 +25,6 @@ class UserLogin(BaseModel):
 async def register_user(
     user : User,
 ):
-    
     user_exist_record = await User.by_email(user.email)
     if user_exist_record: 
         raise HTTPException(detail="User already exists with this email",status_code=400)
@@ -46,7 +45,8 @@ async def login_for_access_token(
              status_code=status.HTTP_401_UNAUTHORIZED, detail="Incorrect email or password",
              headers={"WWW-Authenticate": "Bearer"}
         )
-    access_token_expires = timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token_expires = timedelta(minutes=int(settings.ACCESS_TOKEN_EXPIRE_MINUTES))
+    print(access_token_expires)
     access_token = create_access_token(
         data={"sub": user.email}, expires_delta=access_token_expires
     )

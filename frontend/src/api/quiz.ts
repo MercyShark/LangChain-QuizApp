@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from "axios"
 const api = axios.create({
     withCredentials: true,
-    baseURL: 'http://localhost:8000',
+    baseURL: import.meta.env.VITE_BACKEND_URL,
  })
 
 const login = (email : string, password : string) => {

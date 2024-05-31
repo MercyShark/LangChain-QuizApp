@@ -10,8 +10,6 @@ from langchain_core.output_parsers import JsonOutputParser
 from model.history import QuizHistory
 from model.user import User
 from bson import ObjectId
-# from dotenv import load_dotenv
-# load_dotenv()
 
 from core.oauth import get_current_user
 router = APIRouter(tags=['quiz'])

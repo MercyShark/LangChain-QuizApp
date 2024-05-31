@@ -4,8 +4,8 @@ from typing import Optional
 from core.database import get_connection
 
 class BaseDBModel(BaseModel):
-    created_at: Optional[datetime]
-    updated_at: Optional[datetime]
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
 
     @classmethod
     async def conn(cls):
