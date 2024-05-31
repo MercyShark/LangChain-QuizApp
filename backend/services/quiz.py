@@ -10,6 +10,8 @@ from langchain_core.output_parsers import JsonOutputParser
 from model.history import QuizHistory
 from model.user import User
 from bson import ObjectId
+# from dotenv import load_dotenv
+# load_dotenv()
 
 from core.oauth import get_current_user
 router = APIRouter(tags=['quiz'])
@@ -56,6 +58,7 @@ async def get_quiz(
     current_user: dict =  Depends(get_current_user)
 ) -> JSONResponse:
     
+    # print(current_user['free_trial_count'])
     if current_user['free_trial_count'] <= 0:
         raise HTTPException(detail={"message": "You have exhausted your free trial"}, status_code=status.HTTP_400_BAD_REQUEST)
     res = get_questions(quiz_topic, no_of_questions, no_of_options)
@@ -75,13 +78,16 @@ async def get_quiz_history(current_user: dict =  Depends(get_current_user), only
     history = await QuizHistory.find({"user_id": ObjectId(current_user['_id'])})
     data = []
     print(only_names)
+    count = 1
     for h in history:
         data.append({
+            "id" : count,
             "_id" : str(h["_id"]),
             "quiz": h["quiz"] if not only_names else h["quiz"]["quiz_topic"],
             "created_at": str(h["created_at"]),
             "updated_at": str(h["updated_at"])
         })
+        count += 1
     main_data = {
         "total_quiz": len(data),
         # "user_id": str(current_user['_id']),

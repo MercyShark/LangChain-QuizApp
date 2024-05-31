@@ -64,3 +64,10 @@ async def read_users_me(
     
     print(current_user)
     return current_user
+
+
+@router.post("/logout/")
+async def logout_user():
+    response = JSONResponse(content={"message":"User logged out successfully"})
+    response.delete_cookie(key="access_token")
+    return response
