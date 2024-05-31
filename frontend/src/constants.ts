@@ -1,5 +1,5 @@
 export const response = {
-    "quiz_topic": "animal",
+    "quiz_topic": "Sample Quiz Animal",
     "no_of_questions": 10,
     "questions": [
         {

@@ -1,7 +1,6 @@
 import { Button } from "@mui/material";
 import { useEffect, useState } from "react";
-
-const QuestionAnswer = ({ question , showAllAnswer}) => {
+const QuestionAnswer = ({ question , showAllAnswer = false}) => {
   const [isAnswerVisible, setIsAnswerVisible] = useState<boolean>(false);
 
   useEffect(() => { 

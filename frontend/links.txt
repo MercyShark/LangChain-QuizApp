@@ -1,0 +1,4 @@
+https://stackoverflow.com/questions/71644043/the-data-grid-component-requires-all-rows-to-have-a-unique-id-property
+
+
+https://stackoverflow.com/questions/67970440/how-to-make-material-data-grid-width-to-fill-the-parent-component-in-react-js
